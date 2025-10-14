@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.App.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.App.dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  gap: 30px;
+}
+
+.App.light .App-header {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.App.dark .App-header {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.theme-toggle button {
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.light .theme-toggle button {
+  background-color: #fff;
+  color: #333;
+  border-color: #333;
+}
+
+.light .theme-toggle button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .theme-toggle button {
+  background-color: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark .theme-toggle button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.counter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.counter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.counter-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.counter-buttons button:first-child {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.counter-buttons button:nth-child(2) {
+  background-color: #4ecdc4;
+  color: white;
+}
+
+.counter-buttons button:last-child {
+  background-color: #45b7d1;
+  color: white;
+}
+
+.todo-section {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.light .todo-input input {
+  background-color: #fff;
+  color: #333;
+  border-color: #ddd;
+}
+
+.light .todo-input input:focus {
+  outline: none;
+  border-color: #45b7d1;
+}
+
+.dark .todo-input input {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark .todo-input input:focus {
+  outline: none;
+  border-color: #45b7d1;
+}
+
+.todo-input button {
+  padding: 12px 24px;
+  background-color: #45b7d1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-input button:hover {
+  background-color: #3a9bc1;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.light .todo-item {
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.dark .todo-item {
+  background-color: #333;
+  border-color: #555;
+}
+
+.todo-item span {
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-item button {
+  padding: 6px 12px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+  background-color: #ff5252;
+}
